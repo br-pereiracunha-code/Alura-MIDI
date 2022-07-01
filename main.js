@@ -1,3 +1,4 @@
+//Ppm...............................
 function tocaSomPom(){
     document.querySelector('#som_tecla_pom').play();
 }
@@ -5,3 +6,11 @@ function tocaSomPom(){
 const listaDeTeclas = document.querySelectorAll('.tecla');
 
 listaDeTeclas[0].onclick = tocaSomPom;
+
+let contador = 0;
+
+//enquanto
+while(contador < listaDeTeclas.length){
+    listaDeTeclas[contador].onclick = tocaSomPom;
+    contador++;
+}
